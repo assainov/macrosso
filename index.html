@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Macrosso - Track Your Daily Food Intake</title>
+
+     <!-- Compiled and minified CSS for Materialize CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Icons for Materialize CSS -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body >
+    <!-- Navbar  -->
+    <nav class="teal accent-3">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo left blue-grey-text text-darken-4">Macrosso</a>
+                <ul class="right">
+                <li><a id="clear-all" class="waves-effect waves-light btn blue-grey darken-4">Clear All</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Form section -->
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Add Food Items</span>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12 m3">
+                                <select id="day" class="browser-default">
+                                </select>
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <input id="meal" type="text" class="validate">
+                                <label for="meal">Food Item Name</label>
+                            </div>
+                            <div class="input-field col s12 m2">
+                                <input id="carbs" type="number" class="validate">
+                                <label for="carbs">Carbohydrates</label>
+                            </div>
+                            <div class="input-field col s6 m2">
+                                <input id="proteins" type="number" class="validate">
+                                <label for="proteins">Proteins</label>
+                            </div>
+                            <div class="input-field col s6 m1">
+                                <input id="fats" type="number" class="validate">
+                                <label for="fats">Fats</label>
+                            </div>
+                            <button class="add-btn teal accent-4 waves-effect waves-dark btn"><i class="material-icons left">add</i>Add Meal</button>
+                            <button class="update-btn blue waves-effect waves-dark btn"><i class="material-icons left" style="display:none">check</i>Update Meal</button>
+                            <button class="delete-btn red accent-3 waves-effect waves-dark btn"><i class="material-icons left" style="display:none">delete</i>Delete</button>
+                            <button class="back-btn grey darken-1 waves-effect waves-dark btn right"><i class="material-icons left" style="display:none">keyboard_return</i>Back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="macros">
+            <br><br>
+            <div class="row">
+                <div class="input-field col s12 m5">
+                    <select id="macros-day-title" class="browser-default">
+                    </select>
+                </div>
+            </div>
+    
+            <!-- Item List -->
+                <ul id="item-list" class="collection">
+                </ul>
+            <!-- Total Macros -->
+            <table id="total-macros" class="centered">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Total Calories</th>
+                        <th>Total Carbohydrates</th>
+                        <th>Total Proteins</th>
+                        <th>Total Fats</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td><span class="total-day"></span></td>
+                        <td><span class="total-calories">0</span>g</td>
+                        <td><span class="total-carbs">0</span>g</td>
+                        <td><span class="total-proteins">0</span>g</td>
+                        <td><span class="total-fats">0</span>g</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+
+    </div>
+    <!-- JQuery CDN for Materialize CSS -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript for Materialize CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
