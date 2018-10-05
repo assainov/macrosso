@@ -1,4 +1,4 @@
-# Macrosso - <a href="https://assainov.github.io/macrosso" target="_blank">Try Demo</a>
+# Macrosso - [Try Demo](https://assainov.github.io/macrosso){:target="_blank"}
 ## Track your macronutrients and calories by meals and days
 ## Purpose: to practice **module pattern** in Vanilla JS.
 ### Technologies used: Javascript ES5 & ES6+, Local storage, Materialize CSS
